@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Rasel's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello from Rasel</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts: Inter & Space Grotesk for that bold look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>Hello from Rasel! ❤️</h1>
+
+    <!-- Overlay Fullscreen Menu -->
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-close" id="closeMenu">
+            <i class="bi bi-x-lg"></i>
+        </div>
+        <nav class="overlay-nav">
+            <ul class="list-unstyled">
+                <li><a href="#hero" class="menu-link">ABOUT</a></li>
+                <li><a href="#about" class="menu-link">EXPERTISE</a></li>
+                <li><a href="#expertise" class="menu-link">EXPERIENCE</a></li>
+                <li><a href="#contact" class="menu-link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="custom-nav">
+        <div class="brand-block">
+            <span class="fw-bold fs-5 font-space">Md. Abu Rasel</span>
+            <div class="status-pill">
+                <div class="status-dot"></div>
+                Available
+            </div>
+        </div>
+        <div class="menu-toggle" id="navToggle">
+            <span class="small fw-medium">Menu</span>
+            <i class="bi bi-filter-right fs-4"></i>
+        </div>
+    </header>
+
+    <!-- Main Hero -->
+    <main id="hero">
+        <div class="hero-image-container">
+            <!-- Replace with your own high-end portrait/thematic image -->
+            <img src="./assets/hero-img.png" class="hero-img" alt="Background Subject">
+            <h1 class="hero-name">Md. Abu Rasel<span class="reg-mark">R</span></h1>
+        </div>
+
+        <div class="hero-details container">
+            <div class="detail-item">
+                <span class="detail-label">©2026</span>
+                <p class="detail-text">Engineering resilience at the intersection of security, operations, and scale.</p>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Happening</span>
+                <p class="detail-text">Leading operations at TheDeVGarden to build sustainable operation models that don't just survive - they thrive.</p>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Legacy</span>
+                <p class="detail-text">Leveraging deep-rooted experience in BPO, Banking and hyper-growth E-commerce to harden the future of the web.</p>
+            </div>
+        </div>
+
+        <!-- Horizontal Tech Scrolling Area -->
+        <div class="tech-bar container">
+            <div class="tech-pill">
+                <i class="bi bi-shield-check tech-icon"></i>
+                Firewall Blox
+            </div>
+            <div class="tech-pill">
+                <i class="bi bi-terminal tech-icon"></i>
+                Terminal Blox
+            </div>
+            <div class="tech-pill">
+                <i class="bi bi-cpu tech-icon"></i>
+                Hardware Blox
+            </div>
+            <div class="tech-pill">
+                <i class="bi bi-incognito tech-icon"></i>
+                Privacy Blox
+            </div>
+            <div class="tech-pill">
+                <i class="bi bi-layers tech-icon"></i>
+                Infra Blox
+            </div>
+            <div class="tech-pill">
+                <i class="bi bi-code-slash tech-icon"></i>
+                Logic Blox
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>
